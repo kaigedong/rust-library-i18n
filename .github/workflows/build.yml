@@ -1,0 +1,30 @@
+name: 'GitHub Page Bot'
+
+on:
+  push:
+    # push 到main分支时触发
+    branches: [main]
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 从仓库获取代码
+      - name: 'Checkout codes'
+        uses: actions/checkout@v1
+
+      # 执行更新代码
+      - name: '构建生成代码'
+        run: bash build.sh
+
+      - name: 'Push branch'
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          # 部署到 gh 分支
+          target_branch: gh
+          # 部署目录为脚本的输出目录
+          build_dir: rust/build/x86_64-unknown-linux-gnu/doc
+        env:
+          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -6,8 +6,6 @@
 
 如果您想通过源码构建文档，最快最直接的方式是跳转到 Rust 官方仓库，了解 Rust 构建流程，通过自身的学习，以此探索更好的构建 HTML 文档的操作。该项目所提供的构建命令仅供参考，如果您有更好的构建方式，也欢迎您的 PR。
 
-
-
 ## 第一步：克隆和替换
 
 ```bash
@@ -45,8 +43,6 @@ git add -A
 git commit -m none
 ```
 
-
-
 ## 第二步：添加配置
 
 ```bash
@@ -57,10 +53,7 @@ echo -e "changelog-seen = 2\n[llvm]\nninja = false" >> config.toml
 Write-Output "changelog-seen = 2`n[llvm]`nninja = false" >> config.toml
 ```
 
-
-
 ## 第三步：构建离线文档
-
 
 ```bash
 # 构建 HTML 离线静态文档
