@@ -1,4 +1,13 @@
-#### 在 IDE 中使用中文文档
+# Rust 标准库中文版
+
+添加了Github Action来自动编译，部署标准块文档，通过链接: [https://kaigedong.github.io/rust-library-i18n/std/index.html](https://kaigedong.github.io/rust-library-i18n/std/index.html) 进行阅读
+
+
+这是翻译 [Rust 库](https://github.com/rust-lang/rust/tree/master/library) 的地方， 相关源代码来自于 <https://github.com/rust-lang/rust>。
+
+
+
+## 在 IDE 中使用中文文档
 
 请查看：[使用 Rust 中文文档](./docs/Install.md)
 
