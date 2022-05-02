@@ -29,7 +29,7 @@ git clone https://github.com/rust-lang/libbacktrace library/backtrace/crates/bac
 
 wget https://raw.githubusercontent.com/wtklbm/rust-library-i18n/main/dist/v1.60.0.zip
 unzip v1.60.0.zip -d library1
-mv library1/library/* library/
+cp -r library1/library/* library/
 
 git config --global user.email "dongkaige@gmail.com"
 git config --global user.name "kaigedong"
