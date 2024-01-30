@@ -9,7 +9,7 @@ cd rust
 # 切换版本号
 # 注意：这里的版本号应该与要构建的中文文档的版本号保持一致
 # 特别注意：下面这一行不能直接拷贝，版本号 `1.55.0` 一定要记得改
-git checkout 1.60.0
+git checkout 1.71.0
 
 # 删除 `rust/library` 目录
 rm -rf ./library
@@ -27,8 +27,8 @@ git clone https://github.com/rust-lang/libbacktrace library/backtrace/crates/bac
 # 文档下载地址：https://github.com/wtklbm/rust-library-i18n/tree/main/dist
 # 将中文文档复制到 `rust/library` 目录下，已经存在的，直接选择替换
 
-wget https://raw.githubusercontent.com/wtklbm/rust-library-i18n/main/dist/v1.60.0.zip
-unzip v1.60.0.zip -d library1
+wget https://raw.githubusercontent.com/wtklbm/rust-library-i18n/main/dist/v1.71.0.zip
+unzip v1.71.0.zip -d library1
 cp -r library1/library/* library/
 
 git config --global user.email "dongkaige@gmail.com"
