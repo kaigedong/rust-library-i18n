@@ -39,7 +39,7 @@ git add -A
 git commit -m none
 
 # Linux/macOS Bash
-echo -e "changelog-seen = 2\n[llvm]\nninja = false" >>config.toml
+echo -e "changelog-seen = 2\n[llvm]\nninja = false\ndownload-ci-llvm = false" >>config.toml
 
 # Windows PowerShell
 # Write-Output "changelog-seen = 2`n[llvm]`nninja = false" >> config.toml
